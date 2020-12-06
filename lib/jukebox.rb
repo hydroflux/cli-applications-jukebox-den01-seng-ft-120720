@@ -24,6 +24,7 @@ end
 
 def play(songs)
   user_input = get_user_input
+  
   songs.each_with_index {|song, index|
     index += 1
     if index == user_input
