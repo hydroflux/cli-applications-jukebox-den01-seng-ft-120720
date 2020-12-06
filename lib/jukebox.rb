@@ -28,7 +28,7 @@ def play(songs)
   songs.each_with_index {|song, index|
     index += 1
     binding.pry
-    if index == user_input
+    if index.to_s == user_input
       puts "#{song}"
     end
   }
