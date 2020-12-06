@@ -28,12 +28,12 @@ def play(songs)
   
   songs.each_with_index {|song, index|
     index += 1
+    
+    if user_input != 
     # binding.pry
     if index.to_s == user_input || song == user_input
       puts "#{song}"
       return
-    else
-      invalid_selection(songs)
     end
   }
 end
