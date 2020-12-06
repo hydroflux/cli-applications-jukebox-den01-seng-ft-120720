@@ -30,6 +30,7 @@ def play(songs)
     index += 1
     
     while !user_input.between?(1..9)
+      puts "Invalid input, please try again"
       user_input = get_user_input
     end
     
