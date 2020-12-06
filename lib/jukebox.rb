@@ -44,9 +44,7 @@ def run(songs)
     elsif user_input == "list"
       list(songs)
     elsif user_input == "play"
-      play(songs, user_input)
-    elsif user_input.between?(1..9)
-      play(songs, user_input)
+      play(songs)
     else
       help
     end
