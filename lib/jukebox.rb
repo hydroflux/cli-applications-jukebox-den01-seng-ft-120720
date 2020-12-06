@@ -48,8 +48,9 @@ def run(songs)
     elsif user_input.between?(1..9)
       play(songs, user_input)
     else
-      user_input = get_user_input
+      help
     end
+    user_input = get_user_input
   end
   exit_application
 end
