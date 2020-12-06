@@ -4,7 +4,7 @@ def prompt_user
 end
 
 def get_user_input
-  gets.strip.downcase
+  gets.strip
 end
 
 def help
