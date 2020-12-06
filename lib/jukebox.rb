@@ -40,11 +40,6 @@ def play(songs)
   }
 end
 
-def invalid_selection(songs)
-  puts "Invalid input, please try again"
-  play(songs)
-end
-
 def exit_jukebox
   puts "Goodbye!"
 end
