@@ -35,7 +35,7 @@ def play(songs)
   }
 end
 
-def exit_application
+def exit_jukebox
   puts "Goodbye!"
 end
 
@@ -54,5 +54,5 @@ def run(songs)
     end
     user_input = get_user_input
   end
-  exit_application
+  exit_jukebox
 end
