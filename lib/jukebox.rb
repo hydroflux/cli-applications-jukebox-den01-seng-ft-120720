@@ -31,6 +31,8 @@ def play(songs)
     
     while !user_input.between?(1..9)
       user_input = get_user_input
+    end
+    
     if index.to_s == user_input || song == user_input
       puts "#{song}"
       return
