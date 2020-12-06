@@ -32,8 +32,15 @@ def play(songs)
     if index.to_s == user_input || song == user_input
       puts "#{song}"
       return
+    else
+      invalid_selection(songs)
     end
   }
+end
+
+def invalid_selection(songs)
+  puts "Invalid input, please try again"
+  play(songs)
 end
 
 def exit_jukebox
