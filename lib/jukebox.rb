@@ -29,7 +29,7 @@ def play(songs)
   if user_input.to_i.between(1..9)
     puts "#{songs[user_input] -1}"
   elif songs.include?(user_input)
-
+  
   else
     puts "Invalid input, please try again"
     play(songs)
