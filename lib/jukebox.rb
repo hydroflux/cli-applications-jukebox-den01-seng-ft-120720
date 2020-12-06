@@ -29,8 +29,8 @@ def play(songs)
   songs.each_with_index {|song, index|
     index += 1
     
-    if user_input != 
-    # binding.pry
+    while !user_input.between?(1..9)
+      user_input = get_user_input
     if index.to_s == user_input || song == user_input
       puts "#{song}"
       return
