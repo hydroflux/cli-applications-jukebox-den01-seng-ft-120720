@@ -30,7 +30,7 @@ def play(songs)
     puts "#{songs[user_input.to_i - 1]}"
   elif songs.include?(user_input)
     puts "#{songs.find{|song| song == user_input}}"
-  else
+  elsif
     puts "Invalid input, please try again"
     play(songs)
   end
