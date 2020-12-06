@@ -27,9 +27,9 @@ def play(songs)
   user_input = get_user_input
   
   if user_input.to_i.between?(1,9)
-    puts "#{songs[user_input.to_i - 1]}"
+    puts "Playing #{songs[user_input.to_i - 1]}"
   elsif songs.include?(user_input)
-    puts "#{songs.find{|song| song == user_input}}"
+    puts "Playing #{songs.find{|song| song == user_input}}"
   elsif
     puts "Invalid input, please try again"
     play(songs)
