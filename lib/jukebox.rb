@@ -26,18 +26,17 @@ def play(songs)
   puts "Please enter a song name or number:"
   user_input = get_user_input
   
-  songs.each_with_index {|song, index|
+  if user_input.between?(1..9)
+    songs.each_with_index {|song, index|
     index += 1
-    
-    while !user_input.between?(1..9)
-      puts "Invalid input, please try again"
-      user_input = get_user_input
-    end
     
     if index.to_s == user_input || song == user_input
       puts "#{song}"
       return
     end
+  else
+    puts "Invalid input, please try again"
+    play(songs)
   }
 end
 
