@@ -30,6 +30,7 @@ def play(songs)
     binding.pry
     if index.to_s == user_input
       puts "#{song}"
+      return
     end
   }
 end
