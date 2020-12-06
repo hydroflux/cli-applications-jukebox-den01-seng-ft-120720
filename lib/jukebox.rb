@@ -24,9 +24,9 @@ end
 
 def play(songs)
   puts "Please enter a song name or number:"
-  user_input = get_user_input.to_s
+  user_input = get_user_input
   
-  if user_input.between?(1, 9)
+  if user_input.between?("1", "9")
     songs.each_with_index {|song, index|
     index += 1
     
